@@ -7,6 +7,7 @@ install:
   - cpanm -n Dist::Zilla
   - dzil authordeps --missing | cpanm -n
   - dzil listdeps   --missing | cpanm -n
+  - cpanm File::BOM Config::INI::Reader::Multiline
 
 perl:
   - "5.14"
